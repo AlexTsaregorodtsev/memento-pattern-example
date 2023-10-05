@@ -44,6 +44,11 @@ public class TextEditor {
         fontSize = memento.getFontSize();
     }
 
+    public void restoreDefault() {
+        currentText = new StringBuilder();
+        fontSize = DEFAULT_FONT_SIZE;
+    }
+
     /**
      * Memento class.
      */

@@ -24,17 +24,11 @@ public class Main {
         System.out.printf(FONT_SIZE_TEXT, textEditor.getFontSize());
         System.out.println(textEditor.getText());
 
-        textManager.hitUndo();
-        System.out.printf(FONT_SIZE_TEXT, textEditor.getFontSize());
-        System.out.println(textEditor.getText());
-
-        textManager.hitUndo();
-        System.out.printf(FONT_SIZE_TEXT, textEditor.getFontSize());
-        System.out.println(textEditor.getText());
-
-        textManager.hitUndo();
-        System.out.printf(FONT_SIZE_TEXT, textEditor.getFontSize());
-        System.out.println(textEditor.getText());
+        for (int i = 0; i < 4; i++) {
+            textManager.hitUndo();
+            System.out.printf(FONT_SIZE_TEXT, textEditor.getFontSize());
+            System.out.println(textEditor.getText());
+        }
     }
 
 }

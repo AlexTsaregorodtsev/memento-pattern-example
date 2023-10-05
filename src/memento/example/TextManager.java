@@ -25,6 +25,8 @@ public class TextManager {
         if (!history.isEmpty()) {
             TextEditorState memento = history.pop();
             textEditor.restore(memento);
+        } else {
+            textEditor.restoreDefault();
         }
     }
 
